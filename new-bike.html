@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>add new bike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="new-bike.css">
+</head>
+
+<body>
+<nav role="navigation">Nav</nav>
+<main role="main">
+    <header>
+        <h1>New Bike</h1>
+    </header>
+    <section>
+        <form id="record-bike">
+            <label>Bike Details</label>
+            <div class="form-section">
+                <select name="manufacturer">
+                    <option value="specialized">Specialized</option>
+                    <option value="giant">Giant</option>
+                    <option value="trek">Trek</option>
+                    <option value="cervelo">Cervelo</option>
+                    <option value="bmc">BMC</option>
+                    <option value="kona">Kona</option>
+                </select>
+                <select name="model">
+                    <option value="allez">Allez</option>
+                    <option value="tarmac">Tarmac</option>
+                    <option value="Crux">Crux</option>
+                    <option value="roubiax">Roubiax</option>
+                </select>
+                <select name="size">
+                    <option value="xs">Extra Small</option>
+                    <option value="sm">Small</option>
+                    <option value="med">Medium</option>
+                    <option value="lg">Large</option>
+                    <option value="xl">Extra Large</option>
+                </select>
+                <button type="submit">Add Photo</button>
+            </div>
+            <div class="form-section">
+                <input type="text" name="nickname" placeholder="nickname">
+            </div>
+            <div class="form-section">
+                <input type="text" name="serial" placeholder="serial number">
+            </div>
+            <div class="form-section">
+                <input type="text" name="serial" placeholder="purchase date">
+            </div>
+            <hr>
+            <div class="form-section">
+                <p>Status</p>
+                <input type="radio" name="bike-type" value="0" class="bike-type-radio" checked>
+                <label for="bike-type">
+                    <span>Active</span>
+                    <div class="bike-type-explanation">These bikes are currently part of the active stable. They are
+                        built and in use.
+                    </div>
+                </label>
+
+                <input type="radio" name="bike-type" value="1" class="bike-type-radio">
+                <label for="bike-type">
+                    <span>Retired</span>
+                    <div class="bike-type-explanation">These bikes have been sold, retired and are no longer in use.
+                    </div>
+                </label>
+            </div>
+            <hr>
+            <div class="form-position-section">
+                <p class="position-header">Position Details</p>
+                <div class="position-row">
+                    <div class="component-section">
+                        <div>
+                            <label>Stem</label>
+                            <input type="number" name="stem-length" class="comp-stem" placeholder="120" min="20"
+                                   max="150"
+                                   required="">
+                        </div>
+                        <div>
+                            <label>Handlebar</label>
+                            <input type="number" name="handlebar-width" class="comp-handlebar" placeholder="42" min="38"
+                                   max="46" required="">
+                        </div>
+                        <div>
+                            <label>Crank</label>
+                            <input type="number" name="crank-length" class="comp-crank" placeholder="175" min="165"
+                                   max="180"
+                                   required="">
+                        </div>
+                        <div>
+                            <label>Seat</label>
+                            <input type="number" name="seat-width" class="comp-seat" placeholder="143" min="130"
+                                   max="168">
+                        </div>
+                    </div>
+                    <div class="position-section">
+                        <div>
+                            <label>Seat Height</label>
+                            <input type="number" name="stem-length" class="comp-stem" placeholder="120" min="20"
+                                   max="150"
+                                   required="">
+                        </div>
+                        <div>
+                            <label>Reach</label>
+                            <input type="number" name="handlebar-width" class="comp-handlebar" placeholder="42" min="38"
+                                   max="46" required="">
+                        </div>
+                        <div>
+                            <label>Drop</label>
+                            <input type="number" name="crank-length" class="comp-crank" placeholder="175" min="165"
+                                   max="180"
+                                   required="">
+                        </div>
+                        <div>
+                            <label>Setback</label>
+                            <input type="number" name="seat-width" class="comp-seat" placeholder="143" min="130"
+                                   max="168">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="form-section">
+                <label for="bike-summary">bike summary</label>
+                <textarea name="bike-summary" rows="15" required></textarea>
+            </div>
+            <button type="submit">Save</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </section>
+</main>
+</body>
+
+</html>
